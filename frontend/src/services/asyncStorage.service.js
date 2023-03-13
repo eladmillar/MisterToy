@@ -66,34 +66,41 @@ function getLabels() {
 }
 const labels =
     ['On wheels',
-    'Box game',
-    'Art',
-    'Baby',
-    'Doll',
-    'Puzzle',
-    'Outdoor',]
+        'Box game',
+        'Art',
+        'Baby',
+        'Doll',
+        'Puzzle',
+        'Outdoor',]
 
 function _filterToys(toyToFilter, filter) {
     var toys = [...toyToFilter]
+    const str = JSON.stringify(filter)
+    console.log(JSON.parse(str));
+    filter = JSON.parse(str)
 
-    const { filterBy, sortBy } = filter
-    console.log(filter)
-    if (filterBy.name) {
-        const regex = new RegExp(filterBy.name, 'i')
+    const { sortBy } = filter
+    if (filter.name) {
+        const regex = new RegExp(filter.name, 'i')
         toys = toys.filter(toy => regex.test(toy.name))
     }
-    if (filterBy.inStock) {
-        toys = toys.filter(toy => toy.inStock === filterBy.inStock)
+    if (filter.inStock) {
+        toys = toys.filter(toy => toy.inStock === filter.inStock)
     }
-    if (filterBy.labels.length) {
+    if (filter.labels.length) {
         toys = toys.filter(toy => {
-            return filterBy.labels.every(label => toy.labels.includes(label))
+            return filter.labels.every(label => toy.labels.includes(label))
         })
     }
-    if (sortBy.name) toys = toys.sort((a, b) => a.name.localeCompare(b.name) * sortBy.diff)
-    if (sortBy.price) toys = toys.sort((a, b) => (a.price - b.price) * sortBy.diff)
-    if (sortBy.created) toys = toys.sort((a, b) => (a.createAt - b.createAt) * sortBy.diff)
-
+    if (sortBy.by === 'name') {
+        toys = toys.sort((a, b) => a.name.localeCompare(b.name) * sortBy.desc)
+    }
+    if (sortBy.by === 'price') {
+        toys = toys.sort((a, b) => (a.price - b.price) * sortBy.desc)
+    }
+    if (sortBy.by === 'created') {
+        toys = toys.sort((a, b) => (a.createdAt - b.createdAt) * sortBy.desc)
+    }
     return Promise.resolve(toys)
 }
 
@@ -105,7 +112,7 @@ function _createToys(key) {
             name: utilService.makeId(8),
             price: utilService.getRandomInt(10, 100),
             labels: [labels[utilService.getRandomInt(0, 6)], labels[utilService.getRandomInt(0, 6)]],
-            createAt: Date.now(),
+            createdAt: new Date(Date.now()).toLocaleString(),
             inStock: true,
         }
         toys.push(toy)
@@ -113,4 +120,3 @@ function _createToys(key) {
     utilService.saveToStorage(key, toys)
     return toys
 }
-

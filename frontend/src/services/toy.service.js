@@ -17,25 +17,30 @@ console.log('Toy service is up')
 const API = 'toy/'
 
 function query(filter) {
+    // console.log('filter', filter)
     return storageService.query(KEY, filter)
     // return httpService.get(BASE_URL, filter).then(res => res.data)
 }
 
 function getById(toyId) {
-    // return storageService.getById(KEY, toyId)
+    return storageService.getById(KEY, toyId)
     // return httpService.get(BASE_URL, toyId).then(res => res.data)
 }
 
 function save(toyToSave) {
-    // if (toyToSave._id) return storageService.put(KEY, toyToSave)
-    // else return storageService.post(KEY, toyToSave)
+    if (toyToSave._id) return storageService.put(KEY, toyToSave)
+    else {
+        toyToSave._id = utilService.makeId()
+        return storageService.post(KEY, toyToSave)
+    }
+
 
     // if (toyToSave._id) return httpService.put(BASE_URL, toyToSave).then(res => res.data)
     // else return httpService.post(BASE_URL, toyToSave).then(res => res.data)
 }
 
 function remove(toyId) {
-    // return storageService.remove(KEY, toyId)
+    return storageService.remove(KEY, toyId)
     // return httpService.delete(BASE_URL, toyId).then(res => res.data)
 }
 
@@ -43,8 +48,8 @@ function getEmptyToy() {
     return {
         _id: '',
         name: '',
-        price: null,
-        labels: ['Doll', 'Battery Powered', 'Baby'],
+        price: utilService.getRandomInt(10, 100),
+        labels: [labels[utilService.getRandomInt(0, 6)], labels[utilService.getRandomInt(0, 6)]],
         createdAt: new Date(Date.now()).toLocaleString(),
         inStock: true,
     }
@@ -74,3 +79,12 @@ function _createToy(name, price, labels, reviews) {
         reviews: reviews,
     }
 }
+
+const labels =
+    ['On wheels',
+        'Box game',
+        'Art',
+        'Baby',
+        'Doll',
+        'Puzzle',
+        'Outdoor',]
