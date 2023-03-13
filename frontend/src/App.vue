@@ -1,24 +1,29 @@
 <template>
-  <AppHeader />
-  <RouterView />
-  <AppFooter />
+  <section>
+    <AppHeader />
+    <RouterView />
+    <AppFooter />
+  </section>
 </template>
 
 <script >
-import AppFooter from './components/AppFooter.vue';
-import AppHeader from './components/AppHeader.vue';
+import AppFooter from "./components/AppFooter.vue";
+import AppHeader from "./components/AppHeader.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     AppHeader,
     AppFooter
+  },
+  created() {
+    this.$store.dispatch({ type: "loadToys" });
   }
 };
 </script>
 
 
-<style scoped>
-header {
+<style>
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -78,5 +83,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>

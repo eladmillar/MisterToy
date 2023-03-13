@@ -1,0 +1,19 @@
+header {
+  background-color: rgb(143, 60, 60);
+  align-items: center;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 0.8rem;
+  margin-block-end: 0.5rem;
+}
+
+header a {
+  color: inherit;
+}

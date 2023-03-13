@@ -1,4 +1,5 @@
 import { storageService } from "./asyncStorage.service.js"
+import { utilService } from "./util-service"
 import { httpService } from "./http.service.js"
 
 export const toyService = {
@@ -8,15 +9,15 @@ export const toyService = {
     remove,
     getEmptyToy,
 }
+const KEY = 'toy_DB'
 
 console.log('Toy service is up')
 // _createToys()
 
-// const KEY = 'toy_DB'
 const API = 'toy/'
 
 function query(filter) {
-    // return storageService.query(KEY, filter)
+    return storageService.query(KEY, filter)
     // return httpService.get(BASE_URL, filter).then(res => res.data)
 }
 
@@ -53,11 +54,7 @@ function _createToys() {
     var toys = JSON.parse(localStorage.getItem(KEY))
     if (!toys || !toys.length) {
         toys = [
-            _createToy(
-                'Talking Doll',
-                123,
-                ['Doll', 'Battery Powered', 'Baby'],
-                ['Good', 'Nice', 'Fun']
+            _createToy('Talking Doll', 123, ['Doll', 'Battery Powered', 'Baby'], ['Good', 'Nice', 'Fun']
             ),
             _createToy('Ball', 50, ['Outdoor', 'Baby'], ['Amazing!']),
             _createToy('Cards', 250, ['Box game'], ['wow!', 'awesome']),

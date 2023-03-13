@@ -1,15 +1,15 @@
 <template>
- <nav>
-  <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/about">About</RouterLink>
-  <RouterLink to="/toy">Toy</RouterLink>
- </nav>
+  <nav>
+    <RouterLink to="/">Home</RouterLink> |
+    <RouterLink to="/toy">Toy</RouterLink> |
+    <RouterLink to="/about">About</RouterLink>
+  </nav>
 </template>
 
 <script>
 export default {
- name: 'AppNav'
-}
+  name: "AppNav"
+};
 </script>
 
 <style></style>

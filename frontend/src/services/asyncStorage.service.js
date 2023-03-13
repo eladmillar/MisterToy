@@ -64,6 +64,14 @@ function getLabels() {
         'Outdoor',
     ])
 }
+const labels =
+    ['On wheels',
+    'Box game',
+    'Art',
+    'Baby',
+    'Doll',
+    'Puzzle',
+    'Outdoor',]
 
 function _filterToys(toyToFilter, filter) {
     var toys = [...toyToFilter]
