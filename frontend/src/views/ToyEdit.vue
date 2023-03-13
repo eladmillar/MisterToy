@@ -5,6 +5,7 @@
     <br />
     <label for="price">Price:</label>
     <input v-model="toy.price" />
+    <pre>{{ toy }}</pre>
     <button v-if="toy._id" @click="removeToy">X</button>
     <br />
     <button @click="saveToy">Save</button>
@@ -53,7 +54,7 @@ export default {
   },
   computed: {
     existingToy() {
-      return toyService.getById(this.$route.params.toyId);
+      return this.$store.getters.toyById(this.$route.params.toyId);
     },
     emptyToy() {
       const emptyToy = toyService.getEmptyToy();
