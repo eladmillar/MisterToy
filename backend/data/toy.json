@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "Z4Pro",
+    "name": "Toy 1",
+    "price": 26,
+    "labels": [
+      "Puzzle",
+      "Box game"
+    ],
+    "createdAt": "3/14/2023, 4:00:57 PM",
+    "inStock": true
+  },
+  {
+    "_id": "ZrTxo",
+    "name": "Toy 2",
+    "price": 26,
+    "labels": [
+      "Doll",
+      "Art"
+    ],
+    "createdAt": "3/14/2023, 4:00:57 PM",
+    "inStock": true
+  },
+  {
+    "_id": "yCR6C",
+    "name": "Toy  3",
+    "price": 34,
+    "labels": [
+      "Baby",
+      "Doll"
+    ],
+    "inStock": true,
+    "createdAt": "3/14/2023, 4:00:57 PM"
+  },
+  {
+    "_id": "JsNED",
+    "name": "Toy 4",
+    "price": 53,
+    "labels": [
+      "Box game",
+      "Doll"
+    ],
+    "createdAt": "3/14/2023, 4:00:57 PM",
+    "inStock": true
+  },
+  {
+    "_id": "uYZ8f",
+    "name": "Toy 5",
+    "price": 59,
+    "labels": [
+      "On wheels",
+      "Outdoor"
+    ],
+    "createdAt": "3/14/2023, 4:00:57 PM",
+    "inStock": true
+  },
+  {
+    "_id": "brRQz",
+    "name": "Toy 6",
+    "price": 21,
+    "labels": [
+      "Baby",
+      "Doll"
+    ],
+    "createdAt": "3/14/2023, 4:00:57 PM",
+    "inStock": true
+  },
+  {
+    "_id": "C1aWG",
+    "name": "Toy 7",
+    "price": 42,
+    "labels": [
+      "Doll",
+      "Puzzle"
+    ],
+    "createdAt": "3/14/2023, 4:00:57 PM",
+    "inStock": true
+  },
+  {
+    "_id": "ICBfD",
+    "name": "Toy 8",
+    "price": 11,
+    "labels": [
+      "Puzzle",
+      "Art"
+    ],
+    "createdAt": "3/14/2023, 4:00:57 PM",
+    "inStock": true
+  },
+  {
+    "_id": "s2TOG",
+    "name": "Toy 9",
+    "price": 98,
+    "labels": [
+      "Outdoor",
+      "Art"
+    ],
+    "createdAt": "3/14/2023, 4:00:57 PM",
+    "inStock": true
+  },
+  {
+    "_id": "xF7PI",
+    "name": "Toy 10",
+    "price": 82,
+    "labels": [
+      "Puzzle",
+      "On wheels"
+    ],
+    "inStock": true,
+    "createdAt": "3/14/2023, 4:00:57 PM"
+  }
+]

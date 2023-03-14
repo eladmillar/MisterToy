@@ -6,7 +6,6 @@
     <RouterLink to="/toy/edit" custom v-slot="{ navigate }">
       <button @click="navigate" role="link">Add Toy</button>
     </RouterLink>
-
     <ToyList :toys="toys" />
   </section>
 </template>
@@ -25,7 +24,7 @@ export default {
     return {};
   },
   created() {
-    this.$store.dispatch({ type: "loadToys" });
+    // this.$store.dispatch({ type: "loadToys", filterBy });
     this.debounceHandler = utilService.debounce(this.setFilter, 500);
   },
   computed: {
@@ -34,7 +33,6 @@ export default {
       return this.$store.getters.getMsg;
     },
     toys() {
-      //   console.log(this.$store.getters.toysToDisplay);
       return this.$store.getters.toysToDisplay;
     }
   },
@@ -45,19 +43,6 @@ export default {
         showErrorMsg("Cannot set filter");
       });
     }
-    // filterToys() {
-    //   const filterBy = { ...this.filterBy };
-    // //   console.log('filterBy', filterBy)
-    //   //   this.$store.commit({ type: 'setFilterBy', filterBy })
-
-    //   // If filtering in backend/service
-    //   //   this.isLoading = true;
-    //   this.$store.dispatch({ type: "loadToys", filterBy });
-    //   // .then(() => (this.isLoading = false));
-    // },
-    // setFilterByName(name) {
-    //   this.filterBy.name = name;
-    //   this.filterToys();
   }
 };
 </script>

@@ -3,11 +3,11 @@ import { toyService } from '../services/toy.service'
 export const store = createStore({
     state: {
         toys: toyService.query(),
-        filterBy: {
-            name: "",
-            inStock: null,
-            labels: []
-        },
+        // filterBy: {
+        //     name: "",
+        //     inStock: null,
+        //     labels: []
+        // },
         msg: 'Store Is Running'
     },
     mutations: {
@@ -30,11 +30,11 @@ export const store = createStore({
         },
     },
     actions: {
-        loadToys(context) {
+        loadToys({ commit }, { filterBy }) {
             toyService
-                .query()
+                .query(filterBy)
                 .then(toys => {
-                    context.commit({ type: 'setToys', toys })
+                    commit({ type: 'setToys', toys })
                 })
                 .catch(err => {
                     throw err
@@ -52,9 +52,7 @@ export const store = createStore({
                 })
         },
         saveToy({ commit }, { toy }) {
-            // console.log('toy', toy)
             const type = (toy._id) ? 'updateToy' : 'addToy'
-            console.log('type', type)
             return toyService.save(toy)
                 .then(savedToy => {
                     commit({ type, toy: savedToy })
@@ -79,11 +77,8 @@ export const store = createStore({
         getMsg(state) {
             return state.msg
         },
-        toysToDisplay({ filterBy, toys }) {
-            // console.log('getter toys:', toys)
-            // console.log('filter', filterBy)
+        toysToDisplay({ toys }) {
             if (!toys) return null
-
             return toys
         },
         toyById: ({ toys }) => (toyId) => {
