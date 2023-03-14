@@ -52,7 +52,7 @@ export const store = createStore({
                 })
         },
         saveToy({ commit }, { toy }) {
-            console.log('toy', toy)
+            // console.log('toy', toy)
             const type = (toy._id) ? 'updateToy' : 'addToy'
             console.log('type', type)
             return toyService.save(toy)

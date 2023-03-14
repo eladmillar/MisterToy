@@ -1,17 +1,19 @@
 <template>
-  <section class="toy-edit">
-    <label for="name">Name:</label>
-    <input v-model="toy.name" />
-    <br />
-    <label for="price">Price:</label>
-    <input v-model="toy.price" />
-    <pre>{{ toy }}</pre>
-    <button v-if="toy._id" @click="removeToy">X</button>
-    <br />
-    <button @click="saveToy">Save</button>
+  <div class="toy-edit">
+    <div>
+      <section>
+        <label for="name">Name:</label>
+        <input v-model="toy.name" />
+      </section>
+      <section>
+        <label for="price">Price:</label>
+        <input v-model="toy.price" />
+      </section>
+      <button @click="saveToy">Save</button>
+    </div>
     <br />
     <RouterLink to="/toy">Close</RouterLink>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -33,22 +35,11 @@ export default {
       this.$store
         .dispatch({ type: "saveToy", toy: this.toy })
         .then(toy => {
-          showSuccessMsg("Toy saved");
+          showSuccessMsg("Toy saved", console.log("Toy saved"));
           this.$router.push("/toy");
         })
         .catch(err => {
           showErrorMsg("Cannot save toy");
-        });
-    },
-    removeToy() {
-      this.$store
-        .dispatch({ type: "removeToy", toyId: this.toy._id })
-        .then(toy => {
-          showSuccessMsg("Toy removed");
-          this.$router.push("/toy");
-        })
-        .catch(err => {
-          showErrorMsg("Cannot remove toy");
         });
     }
   },

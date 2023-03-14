@@ -1,10 +1,15 @@
 <template>
-  <section>
-    <pre>
-     {{toy}}
-     </pre>
+  <section class="toy-details flex flex-column">
+    <p>Product name: {{toy.name}}</p>
+    <p>Price: ${{toy.price}}</p>
+    <p>In stock: {{ toy.inStock }}</p>
+    <p>created: {{ toy.createdAt }}</p>
+    <p>Labels: {{ toy.labels }}</p>
+
     <br />
-    <RouterLink to="/toy">Close</RouterLink>
+    <span>
+      <RouterLink to="/toy">Close</RouterLink>
+    </span>
   </section>
 </template>
 

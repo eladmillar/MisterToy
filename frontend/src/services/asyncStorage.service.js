@@ -76,7 +76,7 @@ const labels =
 function _filterToys(toyToFilter, filter) {
     var toys = [...toyToFilter]
     const str = JSON.stringify(filter)
-    console.log(JSON.parse(str));
+    // console.log(JSON.parse(str));
     filter = JSON.parse(str)
 
     const { sortBy } = filter
@@ -109,7 +109,7 @@ function _createToys(key) {
     for (let i = 0; i < 10; i++) {
         const toy = {
             _id: utilService.makeId(),
-            name: utilService.makeId(8),
+            name: `Toy  ${i + 1}`,
             price: utilService.getRandomInt(10, 100),
             labels: [labels[utilService.getRandomInt(0, 6)], labels[utilService.getRandomInt(0, 6)]],
             createdAt: new Date(Date.now()).toLocaleString(),

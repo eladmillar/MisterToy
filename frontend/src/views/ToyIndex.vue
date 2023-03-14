@@ -1,10 +1,12 @@
 <template>
-  <section>
+  <section class="main">
     <h1>toy index</h1>
     <ToyFilter @filter="debounceHandler" />
-    <RouterLink to="/toy/edit">Add Toy</RouterLink>
-    <!-- {{ msg }} -->
-    <!-- {{ toys }} -->
+
+    <RouterLink to="/toy/edit" custom v-slot="{ navigate }">
+      <button @click="navigate" role="link">Add Toy</button>
+    </RouterLink>
+
     <ToyList :toys="toys" />
   </section>
 </template>

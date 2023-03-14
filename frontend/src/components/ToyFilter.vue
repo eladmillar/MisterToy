@@ -1,6 +1,6 @@
 <template>
   <section class="toy-filter flex space-between">
-    <h1>Toy Filter</h1>
+    <h1>Filter</h1>
     <section class="inputs">
       <label for="search">Search:</label>
       <input

@@ -6,14 +6,5 @@
 .toy-list ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
-}
-
-.toy-list ul li {
-  margin-block-end: 0.2rem;
-  background-color: lightsteelblue;
-}
-
-.toy-list .btn-add {
-  margin-block-end: 0.9rem;
+  gap: 2em;
 }

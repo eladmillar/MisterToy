@@ -1,0 +1,11 @@
+.toy-details {
+    position: absolute;
+    width: 300px;
+    top: 30%;
+    left: 50%;
+    margin-left: -170px;
+    border-radius: 20%;
+    background-color: lightsalmon;
+    padding: 40px;
+    gap: 1em;
+}

@@ -1,12 +1,25 @@
 .main {
   width: 90%;
-  margin: 6rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   background-color: #f1f3f5;
-  padding: 2rem;
+  padding: 2rem 0rem;
   border-radius: 12px;
-  min-height: 42rem;
+  min-height: 35rem;
   position: relative;
+}
+
+.main button {
+  width: 160px;
+  height: 60px;
+  background-color: cadetblue;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.main a {
+  text-decoration: none;
+  color: inherit;
 }
