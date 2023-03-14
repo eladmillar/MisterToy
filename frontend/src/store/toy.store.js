@@ -1,14 +1,8 @@
-import { createStore } from 'vuex'
 import { toyService } from '../services/toy.service'
 
-export const store = createStore({
+export const toyStore = {
     state: {
         toys: toyService.query(),
-        // filterBy: {
-        //     name: "",
-        //     inStock: null,
-        //     labels: []
-        // },
         msg: 'Store Is Running'
     },
     mutations: {
@@ -85,17 +79,6 @@ export const store = createStore({
         toyById: ({ toys }) => (toyId) => {
             return { ...toys.find(toy => toy._id === toyId) }
         },
-        pricesPerLabel({ toys }) {
-            let res = {}
-            toys.forEach(toy => {
-                res = toy.labels.reduce((obj, label) => {
-                    if (!obj[label]) obj[label] = 0
-                    obj[label] += toy.price
-                    return obj
-                }, res)
-            })
-            return res
-        },
     },
     modules: {}
-})
+}
