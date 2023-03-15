@@ -10,7 +10,7 @@
   border-radius: 20%;
 }
 
-.toy-edit div {
+.toy-edit form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

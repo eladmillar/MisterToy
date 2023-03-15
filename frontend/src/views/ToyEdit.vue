@@ -1,6 +1,6 @@
 <template>
-  <div class="toy-edit">
-    <div>
+  <section v-if="toy" @submit.prevent="saveToy" class="toy-edit">
+    <form>
       <section>
         <label for="name">Name:</label>
         <input v-model="toy.name" />
@@ -10,10 +10,10 @@
         <input v-model="toy.price" />
       </section>
       <button @click="saveToy">Save</button>
-    </div>
+    </form>
     <br />
     <RouterLink to="/toy">Close</RouterLink>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -22,8 +22,15 @@ import ToyPreview from "../components/ToyPreview.vue";
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js";
 
 export default {
+  name: "toy-edit",
   created() {
-    this.toy = !this.existingToy._id ? this.emptyToy : this.existingToy;
+    const { toyId } = this.$route.params;
+    console.log("this.$route.params", this.$route.params);
+    if (toyId) {
+      toyService.getById(toyId).then(toy => {
+        this.toy = toy;
+      });
+    } else this.toy = toyService.getEmptyToy();
   },
   data() {
     return {
@@ -44,12 +51,8 @@ export default {
     }
   },
   computed: {
-    existingToy() {
-      return this.$store.getters.toyById(this.$route.params.toyId);
-    },
-    emptyToy() {
-      const emptyToy = toyService.getEmptyToy();
-      return emptyToy;
+    labels() {
+      return this.$store.getters.labels;
     }
   },
   components: {

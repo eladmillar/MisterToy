@@ -18,14 +18,15 @@ console.log('Toy service is up')
 const API = 'toy/'
 
 function query(filter) {
-    // console.log('filter', filter)
     // return storageService.query(KEY, filter)
     return httpService.get(BASE_URL, filter)
 }
 
 function getById(toyId) {
+    console.log("toyId", toyId);
+
     // return storageService.getById(KEY, toyId)
-    return httpService.get(BASE_URL, toyId)
+    return httpService.get(BASE_URL + toyId)
 }
 
 function save(toyToSave) {

@@ -76,9 +76,6 @@ export const toyStore = {
             if (!toys) return null
             return toys
         },
-        toyById: ({ toys }) => (toyId) => {
-            return { ...toys.find(toy => toy._id === toyId) }
-        },
     },
     modules: {}
 }

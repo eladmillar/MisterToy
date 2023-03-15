@@ -3,12 +3,15 @@ import { toyService } from '../services/toy.service'
 
 export const store = createStore({
     state: {
-        toys: toyService.query(),
-        // filterBy: {
-        //     name: "",
-        //     inStock: null,
-        //     labels: []
-        // },
+        toys: null,
+        labels:
+            ['On wheels',
+                'Box game',
+                'Art',
+                'Baby',
+                'Doll',
+                'Puzzle',
+                'Outdoor',],
         msg: 'Store Is Running'
     },
     mutations: {
@@ -75,15 +78,15 @@ export const store = createStore({
         },
     },
     getters: {
+        labels(state) {
+            return state.labels
+        },
         getMsg(state) {
             return state.msg
         },
         toysToDisplay({ toys }) {
             if (!toys) return null
             return toys
-        },
-        toyById: ({ toys }) => (toyId) => {
-            return { ...toys.find(toy => toy._id === toyId) }
         },
         pricesPerLabel({ toys }) {
             let res = {}

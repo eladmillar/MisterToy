@@ -13,18 +13,18 @@
   {
     "_id": "ZrTxo",
     "name": "Toy 2",
-    "price": 26,
+    "price": "35",
     "labels": [
       "Doll",
       "Art"
     ],
-    "createdAt": "3/14/2023, 4:00:57 PM",
-    "inStock": true
+    "inStock": false,
+    "createdAt": "3/14/2023, 4:00:57 PM"
   },
   {
     "_id": "yCR6C",
     "name": "Toy  3",
-    "price": 34,
+    "price": "50",
     "labels": [
       "Baby",
       "Doll"
@@ -73,8 +73,8 @@
       "Doll",
       "Puzzle"
     ],
-    "createdAt": "3/14/2023, 4:00:57 PM",
-    "inStock": true
+    "inStock": false,
+    "createdAt": "3/14/2023, 4:00:57 PM"
   },
   {
     "_id": "ICBfD",
@@ -106,7 +106,7 @@
       "Puzzle",
       "On wheels"
     ],
-    "inStock": true,
+    "inStock": false,
     "createdAt": "3/14/2023, 4:00:57 PM"
   }
 ]
