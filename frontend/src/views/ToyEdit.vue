@@ -25,7 +25,6 @@ export default {
   name: "toy-edit",
   created() {
     const { toyId } = this.$route.params;
-    console.log("this.$route.params", this.$route.params);
     if (toyId) {
       toyService.getById(toyId).then(toy => {
         this.toy = toy;

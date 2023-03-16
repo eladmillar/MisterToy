@@ -23,7 +23,7 @@ function query(filter) {
 }
 
 function getById(toyId) {
-    console.log("toyId", toyId);
+    // console.log("toyId", toyId);
 
     // return storageService.getById(KEY, toyId)
     return httpService.get(BASE_URL + toyId)
@@ -48,7 +48,6 @@ function remove(toyId) {
 
 function getEmptyToy() {
     return {
-        _id: '',
         name: '',
         price: utilService.getRandomInt(10, 100),
         labels: [labels[utilService.getRandomInt(0, 6)], labels[utilService.getRandomInt(0, 6)]],

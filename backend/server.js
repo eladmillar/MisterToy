@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const cookieParser = require('cookie-parser')
 
 const app = express()
 const toyService = require('./services/toy.service')
@@ -15,6 +16,7 @@ const corsOptions = {
     credentials: true
 }
 
+app.use(cookieParser())
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use(express.static('public'))
@@ -23,85 +25,99 @@ app.listen(port, () => {
     console.log(`ToyApp listening on: http://localhost:${port}`)
 })
 
-app.get('/api/toy', (req, res) => {
-    const filterBy = {
-        name: req.query.name || '',
-        labels: req.query.labels || [],
-        inStock: req.query.inStock || false,
-        sortBy: req.query.sortBy || {},
-        page: req.query.page || 0,
-    }
-    toyService
-        .query(filterBy)
-        .then(toys => {
-            res.status(201).send(toys)
-        })
-        .catch((err) => {
-            console.log('Backend had error: ', err)
-            res.status(401).send('Failed to get toys')
-        })
-})
 
-app.get('/api/toy/:toyId', (req, res) => {
-    const { toyId } = req.params
-    toyService
-        .getById(toyId)
-        .then(toy => {
-            res.status(201).send(toy)
-        })
-        .catch((err) => {
-            console.log('Backend had error: ', err)
-            res.status(401).send(`Failed to get toy with id: ${toyId}`)
-        })
-})
+//routes
+const authRoutes = require('./api/auth/auth.routes')
+const userRoutes = require('./api/user/user.routes')
+const toyRoutes = require('./api/toy/toy.routes')
 
-app.post('/api/toy', (req, res) => {
-    const toyToSave = {
-        name: req.body.name,
-        price: req.body.price,
-        labels: req.body.labels,
-        inStock: req.body.inStock,
-    }
-    toyService
-        .save(toyToSave)
-        .then((savedToy) => {
-            res.status(201).send(savedToy)
-        })
-        .catch((err) => {
-            console.log('Backend had error: ', err)
-            res.status(401).send('Cannot create Toy')
-        })
-})
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userRoutes)
+app.use('/api/toy', toyRoutes)
 
-app.put('/api/toy', (req, res) => {
-    const toyToSave = {
-        _id: req.body._id,
-        name: req.body.name,
-        price: req.body.price,
-        labels: req.body.labels,
-        inStock: req.body.inStock,
-        createdAt: req.body.createdAt
-    }
-    toyService
-        .save(toyToSave)
-        .then(savedtoy => {
-            res.status(201).send(savedtoy)
-        })
-        .catch((err) => {
-            console.log('Backend had error: ', err)
-            res.status(401).send('Cannot remove Toy')
-        })
-})
 
-app.delete('/api/toy/:toyId', (req, res) => {
-    const { toyId } = req.params
+const logger = require('./services/logger.service')
+logger.info('Hi', 90, 'Bobo')
 
-    toyService.remove(toyId)
-        .then(() => {
-            res.send('OK, deleted')
-        })
-        .catch((err) => {
-            console.log('Error:', err)
-            res.status(400).send('Cannot remove toy')
-        })
-})
+// app.get('/api/toy', (req, res) => {
+//     const filterBy = {
+//         name: req.query.name || '',
+//         labels: req.query.labels || [],
+//         inStock: req.query.inStock || false,
+//         sortBy: req.query.sortBy || {},
+//         page: req.query.page || 0,
+//     }
+//     toyService
+//         .query(filterBy)
+//         .then(toys => {
+//             res.status(201).send(toys)
+//         })
+//         .catch((err) => {
+//             console.log('Backend had error: ', err)
+//             res.status(401).send('Failed to get toys')
+//         })
+// })
+
+// app.get('/api/toy/:toyId', (req, res) => {
+//     const { toyId } = req.params
+//     toyService
+//         .getById(toyId)
+//         .then(toy => {
+//             res.status(201).send(toy)
+//         })
+//         .catch((err) => {
+//             console.log('Backend had error: ', err)
+//             res.status(401).send(`Failed to get toy with id: ${toyId}`)
+//         })
+// })
+
+// app.post('/api/toy', (req, res) => {
+//     const toyToSave = {
+//         name: req.body.name,
+//         price: req.body.price,
+//         labels: req.body.labels,
+//         inStock: req.body.inStock,
+//     }
+//     toyService
+//         .save(toyToSave)
+//         .then((savedToy) => {
+//             res.status(201).send(savedToy)
+//         })
+//         .catch((err) => {
+//             console.log('Backend had error: ', err)
+//             res.status(401).send('Cannot create Toy')
+//         })
+// })
+
+// app.put('/api/toy', (req, res) => {
+//     const toyToSave = {
+//         _id: req.body._id,
+//         name: req.body.name,
+//         price: req.body.price,
+//         labels: req.body.labels,
+//         inStock: req.body.inStock,
+//         createdAt: req.body.createdAt
+//     }
+//     toyService
+//         .save(toyToSave)
+//         .then(savedtoy => {
+//             res.status(201).send(savedtoy)
+//         })
+//         .catch((err) => {
+//             console.log('Backend had error: ', err)
+//             res.status(401).send('Cannot remove Toy')
+//         })
+// })
+
+// app.delete('/api/toy/:toyId', (req, res) => {
+//     const { toyId } = req.params
+
+//     toyService.remove(toyId)
+//         .then(() => {
+//             res.send('OK, deleted')
+//         })
+//         .catch((err) => {
+//             console.log('Error:', err)
+//             res.status(400).send('Cannot remove toy')
+//         })
+// })

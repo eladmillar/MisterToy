@@ -23,7 +23,6 @@ export default {
   },
   created() {
     const { toyId } = this.$route.params;
-    console.log("this.$route.params", this.$route.params);
     toyService.getById(toyId).then(toy => {
       this.toy = toy;
     });

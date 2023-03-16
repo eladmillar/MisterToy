@@ -41,10 +41,6 @@ export default {
   },
   computed: {
     toys() {
-      console.log(
-        "this.$store.getters.toysToDisplay",
-        this.$store.getters.toysToDisplay
-      );
       return this.$store.getters.toysToDisplay;
     },
     labels() {
