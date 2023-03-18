@@ -1,0 +1,41 @@
+.toy-preview {
+  display: flex;
+  flex-direction: column;
+  background-color: lightsteelblue;
+  margin-block-end: 0.2rem;
+  padding: 20px;
+  width: 150px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  button {
+    align-self: center;
+    width: 120px;
+    height: 40px;
+    margin-top: 1em;
+    font-size: 1.4em;
+    cursor: pointer;
+
+    &.btn-edit {
+      background-color: rgba(38, 158, 38, 0.702);
+    }
+
+    &.btn-details {
+      background-color: rgba(68, 68, 186, 0.674);
+    }
+
+    &.btn-delete {
+      background-color: rgba(190, 23, 23, 0.681);
+    }
+  }
+
+}

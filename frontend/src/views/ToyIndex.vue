@@ -38,7 +38,6 @@ export default {
   },
   methods: {
     setFilter(filterBy) {
-      //   console.log("filterBy", filterBy);
       this.$store.dispatch({ type: "setFilter", filterBy }).catch(err => {
         showErrorMsg("Cannot set filter");
       });

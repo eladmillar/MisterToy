@@ -3,13 +3,13 @@ const toyService = require('./toy.service.js')
 const logger = require('../../services/logger.service')
 
 async function getToys(req, res) {
-  logger.debug('sort', req.query.sortBy)
+  // logger.debug('sort', req.query.sortBy)
   try {
     const filterBy = {
       name: req.query.name || '',
       inStock: req.query.inStock || 'all',
       labels: req.query.labels || 'all',
-      sortBy: req.query.sortBy || { all: 1 },
+      sortBy: req.query.sortBy || 'all',
     }
     // logger.debug('Getting Toys', filterBy)
     const toys = await toyService.query(filterBy)

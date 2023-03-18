@@ -1,0 +1,20 @@
+.main {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: #f1f3f5;
+  padding: 2rem 0rem;
+  border-radius: 12px;
+  min-height: 35rem;
+  position: relative;
+
+  & button {
+    width: 160px;
+    height: 60px;
+    background-color: cadetblue;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+}

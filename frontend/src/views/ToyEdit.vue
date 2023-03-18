@@ -23,12 +23,11 @@ import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js";
 
 export default {
   name: "toy-edit",
-  created() {
+  async created() {
     const { toyId } = this.$route.params;
     if (toyId) {
-      toyService.getById(toyId).then(toy => {
-        this.toy = toy;
-      });
+      const toy = await toyService.getById(toyId);
+      this.toy = toy;
     } else this.toy = toyService.getEmptyToy();
   },
   data() {
@@ -37,25 +36,23 @@ export default {
     };
   },
   methods: {
-    saveToy() {
-      this.$store
-        .dispatch({ type: "saveToy", toy: this.toy })
-        .then(toy => {
-          showSuccessMsg("Toy saved", console.log("Toy saved"));
-          this.$router.push("/toy");
-        })
-        .catch(err => {
-          showErrorMsg("Cannot save toy");
-        });
+    async saveToy() {
+      try {
+        this.$store.dispatch({ type: "saveToy", toy: this.toy });
+        showSuccessMsg("Toy saved", console.log("Toy saved"));
+        this.$router.push("/toy");
+      } catch {
+        showErrorMsg("Cannot save toy");
+      }
+    },
+    computed: {
+      labels() {
+        return this.$store.getters.labels;
+      }
+    },
+    components: {
+      ToyPreview
     }
-  },
-  computed: {
-    labels() {
-      return this.$store.getters.labels;
-    }
-  },
-  components: {
-    ToyPreview
   }
 };
 </script>

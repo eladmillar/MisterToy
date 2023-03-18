@@ -1433,3 +1433,484 @@
 16.3.2023, 22:15:04 - DEBUG - sort |  
 16.3.2023, 22:15:04 - INFO - Req was made 
 16.3.2023, 22:15:49 - INFO - Hi | 90 | Bobo 
+18.3.2023, 16:54:44 - INFO - Hi | 90 | Bobo 
+18.3.2023, 16:54:53 - INFO - Req was made 
+18.3.2023, 16:54:53 - DEBUG - sort |  
+18.3.2023, 17:07:28 - INFO - Req was made 
+18.3.2023, 17:07:28 - DEBUG - sort |  
+18.3.2023, 17:07:29 - INFO - Req was made 
+18.3.2023, 17:07:29 - DEBUG - sort |  
+18.3.2023, 17:07:41 - INFO - Req was made 
+18.3.2023, 17:07:41 - DEBUG - sort |  
+18.3.2023, 17:07:48 - INFO - Req was made 
+18.3.2023, 17:07:48 - DEBUG - sort |  
+18.3.2023, 17:08:16 - INFO - Req was made 
+18.3.2023, 17:08:16 - DEBUG - sort |  
+18.3.2023, 17:08:19 - INFO - Req was made 
+18.3.2023, 17:08:19 - DEBUG - sort |  
+18.3.2023, 17:08:23 - INFO - Req was made 
+18.3.2023, 17:08:23 - DEBUG - sort |  
+18.3.2023, 17:08:25 - INFO - Req was made 
+18.3.2023, 17:08:25 - DEBUG - sort |  
+18.3.2023, 17:08:46 - INFO - Req was made 
+18.3.2023, 17:08:46 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 17:08:48 - INFO - Req was made 
+18.3.2023, 17:08:48 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 17:08:59 - DEBUG - toy | {"name":"Toy 11","price":60,"labels":["Box game","Doll"],"createdAt":"3/18/2023, 5:08:56 PM","inStock":true} 
+18.3.2023, 17:08:59 - DEBUG - toy | {"name":"Toy 11","price":60,"labels":["Box game","Doll"],"createdAt":"3/18/2023, 5:08:56 PM","inStock":true} 
+18.3.2023, 17:13:34 - INFO - Req was made 
+18.3.2023, 17:13:34 - DEBUG - sort |  
+18.3.2023, 17:16:24 - INFO - Req was made 
+18.3.2023, 17:16:24 - DEBUG - sort |  
+18.3.2023, 17:16:53 - INFO - Req was made 
+18.3.2023, 17:16:53 - DEBUG - sort |  
+18.3.2023, 17:30:15 - INFO - Req was made 
+18.3.2023, 17:30:15 - DEBUG - sort |  
+18.3.2023, 17:53:45 - INFO - Req was made 
+18.3.2023, 17:53:45 - DEBUG - sort |  
+18.3.2023, 17:55:17 - INFO - Req was made 
+18.3.2023, 17:55:17 - DEBUG - sort |  
+18.3.2023, 17:55:20 - INFO - Req was made 
+18.3.2023, 17:55:20 - DEBUG - sort |  
+18.3.2023, 17:59:30 - INFO - Req was made 
+18.3.2023, 17:59:30 - DEBUG - sort |  
+18.3.2023, 17:59:34 - INFO - Req was made 
+18.3.2023, 17:59:34 - DEBUG - sort |  
+18.3.2023, 18:00:27 - INFO - Req was made 
+18.3.2023, 18:00:27 - DEBUG - sort |  
+18.3.2023, 18:02:51 - INFO - Req was made 
+18.3.2023, 18:02:51 - DEBUG - sort |  
+18.3.2023, 18:02:52 - INFO - Req was made 
+18.3.2023, 18:02:52 - DEBUG - sort |  
+18.3.2023, 18:02:54 - INFO - Req was made 
+18.3.2023, 18:02:54 - DEBUG - sort |  
+18.3.2023, 18:03:24 - INFO - Req was made 
+18.3.2023, 18:03:24 - DEBUG - sort |  
+18.3.2023, 18:07:09 - INFO - Req was made 
+18.3.2023, 18:07:09 - DEBUG - sort |  
+18.3.2023, 18:07:10 - INFO - Req was made 
+18.3.2023, 18:07:10 - DEBUG - sort |  
+18.3.2023, 18:07:17 - INFO - Req was made 
+18.3.2023, 18:07:17 - DEBUG - sort |  
+18.3.2023, 18:08:33 - INFO - Req was made 
+18.3.2023, 18:08:33 - DEBUG - sort |  
+18.3.2023, 18:08:35 - INFO - Req was made 
+18.3.2023, 18:08:35 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:08:37 - INFO - Req was made 
+18.3.2023, 18:08:37 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:08:39 - INFO - Req was made 
+18.3.2023, 18:08:39 - DEBUG - sort |  
+18.3.2023, 18:08:52 - INFO - Req was made 
+18.3.2023, 18:08:52 - DEBUG - sort |  
+18.3.2023, 18:08:54 - INFO - Req was made 
+18.3.2023, 18:08:54 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:08:56 - INFO - Req was made 
+18.3.2023, 18:08:56 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:09:01 - INFO - Req was made 
+18.3.2023, 18:09:01 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:09:04 - INFO - Req was made 
+18.3.2023, 18:09:04 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:09:04 - INFO - Req was made 
+18.3.2023, 18:09:04 - DEBUG - sort |  
+18.3.2023, 18:09:05 - INFO - Req was made 
+18.3.2023, 18:09:05 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:09:06 - INFO - Req was made 
+18.3.2023, 18:09:06 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:10:08 - INFO - Req was made 
+18.3.2023, 18:10:08 - DEBUG - sort |  
+18.3.2023, 18:10:10 - INFO - Req was made 
+18.3.2023, 18:10:10 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:10:13 - INFO - Req was made 
+18.3.2023, 18:10:13 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:14:50 - INFO - Req was made 
+18.3.2023, 18:14:50 - DEBUG - sort |  
+18.3.2023, 18:15:23 - INFO - Req was made 
+18.3.2023, 18:15:23 - DEBUG - sort |  
+18.3.2023, 18:15:53 - INFO - Req was made 
+18.3.2023, 18:15:53 - DEBUG - sort |  
+18.3.2023, 18:16:09 - INFO - Req was made 
+18.3.2023, 18:16:09 - DEBUG - sort |  
+18.3.2023, 18:16:33 - INFO - Req was made 
+18.3.2023, 18:16:33 - DEBUG - sort |  
+18.3.2023, 18:16:35 - INFO - Req was made 
+18.3.2023, 18:16:35 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:16:37 - INFO - Req was made 
+18.3.2023, 18:16:37 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:16:55 - INFO - Req was made 
+18.3.2023, 18:16:55 - DEBUG - sort |  
+18.3.2023, 18:16:58 - INFO - Req was made 
+18.3.2023, 18:16:58 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:16:59 - INFO - Req was made 
+18.3.2023, 18:16:59 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:17:49 - INFO - Req was made 
+18.3.2023, 18:17:49 - DEBUG - sort |  
+18.3.2023, 18:17:50 - INFO - Req was made 
+18.3.2023, 18:17:50 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:17:51 - INFO - Req was made 
+18.3.2023, 18:17:51 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:31 - INFO - Req was made 
+18.3.2023, 18:19:31 - DEBUG - sort |  
+18.3.2023, 18:19:39 - INFO - Req was made 
+18.3.2023, 18:19:39 - DEBUG - sort |  
+18.3.2023, 18:19:41 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:41 - INFO - Req was made 
+18.3.2023, 18:19:42 - INFO - Req was made 
+18.3.2023, 18:19:42 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:44 - INFO - Req was made 
+18.3.2023, 18:19:44 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:45 - INFO - Req was made 
+18.3.2023, 18:19:45 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:47 - INFO - Req was made 
+18.3.2023, 18:19:47 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:48 - INFO - Req was made 
+18.3.2023, 18:19:48 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:49 - INFO - Req was made 
+18.3.2023, 18:19:49 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:50 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:50 - INFO - Req was made 
+18.3.2023, 18:19:58 - INFO - Req was made 
+18.3.2023, 18:19:58 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:19:59 - INFO - Req was made 
+18.3.2023, 18:19:59 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:01 - INFO - Req was made 
+18.3.2023, 18:20:01 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:02 - INFO - Req was made 
+18.3.2023, 18:20:02 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:03 - INFO - Req was made 
+18.3.2023, 18:20:03 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:04 - INFO - Req was made 
+18.3.2023, 18:20:04 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:05 - INFO - Req was made 
+18.3.2023, 18:20:05 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:06 - INFO - Req was made 
+18.3.2023, 18:20:06 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:07 - INFO - Req was made 
+18.3.2023, 18:20:07 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:08 - INFO - Req was made 
+18.3.2023, 18:20:08 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:10 - INFO - Req was made 
+18.3.2023, 18:20:10 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:40 - INFO - Req was made 
+18.3.2023, 18:20:40 - DEBUG - sort |  
+18.3.2023, 18:20:44 - INFO - Req was made 
+18.3.2023, 18:20:44 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:20:47 - INFO - Req was made 
+18.3.2023, 18:20:47 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:21:16 - INFO - Req was made 
+18.3.2023, 18:21:16 - DEBUG - sort |  
+18.3.2023, 18:21:18 - INFO - Req was made 
+18.3.2023, 18:21:18 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:21:20 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:21:20 - INFO - Req was made 
+18.3.2023, 18:22:28 - INFO - Req was made 
+18.3.2023, 18:22:28 - DEBUG - sort |  
+18.3.2023, 18:22:29 - INFO - Req was made 
+18.3.2023, 18:22:29 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:22:31 - INFO - Req was made 
+18.3.2023, 18:22:31 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:23:50 - INFO - Req was made 
+18.3.2023, 18:23:50 - DEBUG - sort |  
+18.3.2023, 18:23:51 - INFO - Req was made 
+18.3.2023, 18:23:51 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:23:53 - INFO - Req was made 
+18.3.2023, 18:23:53 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:26:03 - INFO - Req was made 
+18.3.2023, 18:26:03 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:26:06 - INFO - Req was made 
+18.3.2023, 18:26:06 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:27:09 - DEBUG - sort |  
+18.3.2023, 18:27:09 - INFO - Req was made 
+18.3.2023, 18:27:12 - INFO - Req was made 
+18.3.2023, 18:27:12 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:27:15 - INFO - Req was made 
+18.3.2023, 18:27:15 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:27:20 - INFO - Req was made 
+18.3.2023, 18:27:20 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:27:50 - INFO - Req was made 
+18.3.2023, 18:27:50 - DEBUG - sort |  
+18.3.2023, 18:27:52 - INFO - Req was made 
+18.3.2023, 18:27:52 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:28:20 - INFO - Req was made 
+18.3.2023, 18:28:20 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:28:52 - INFO - Req was made 
+18.3.2023, 18:28:52 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:29:11 - DEBUG - sort |  
+18.3.2023, 18:29:11 - INFO - Req was made 
+18.3.2023, 18:30:43 - INFO - Req was made 
+18.3.2023, 18:30:43 - DEBUG - sort |  
+18.3.2023, 18:30:44 - INFO - Req was made 
+18.3.2023, 18:30:44 - DEBUG - sort |  
+18.3.2023, 18:30:45 - INFO - Req was made 
+18.3.2023, 18:30:45 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:30:48 - INFO - Req was made 
+18.3.2023, 18:30:48 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:30:56 - INFO - Req was made 
+18.3.2023, 18:30:56 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:30:59 - INFO - Req was made 
+18.3.2023, 18:30:59 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:31:14 - INFO - Req was made 
+18.3.2023, 18:31:14 - DEBUG - sort |  
+18.3.2023, 18:31:16 - INFO - Req was made 
+18.3.2023, 18:31:16 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:31:17 - INFO - Req was made 
+18.3.2023, 18:31:17 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:33:55 - INFO - Req was made 
+18.3.2023, 18:33:55 - DEBUG - sort |  
+18.3.2023, 18:34:06 - DEBUG - sort |  
+18.3.2023, 18:34:06 - INFO - Req was made 
+18.3.2023, 18:34:22 - INFO - Req was made 
+18.3.2023, 18:34:22 - DEBUG - sort |  
+18.3.2023, 18:34:33 - INFO - Req was made 
+18.3.2023, 18:34:33 - DEBUG - sort |  
+18.3.2023, 18:34:38 - INFO - Req was made 
+18.3.2023, 18:34:38 - DEBUG - sort |  
+18.3.2023, 18:35:46 - INFO - Req was made 
+18.3.2023, 18:35:46 - DEBUG - sort |  
+18.3.2023, 18:35:58 - DEBUG - sort |  
+18.3.2023, 18:35:58 - INFO - Req was made 
+18.3.2023, 18:36:06 - INFO - Req was made 
+18.3.2023, 18:36:06 - DEBUG - sort |  
+18.3.2023, 18:36:07 - INFO - Req was made 
+18.3.2023, 18:36:07 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:09 - INFO - Req was made 
+18.3.2023, 18:36:09 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:12 - INFO - Req was made 
+18.3.2023, 18:36:12 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:13 - INFO - Req was made 
+18.3.2023, 18:36:13 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:16 - INFO - Req was made 
+18.3.2023, 18:36:16 - DEBUG - sort |  
+18.3.2023, 18:36:18 - INFO - Req was made 
+18.3.2023, 18:36:18 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:20 - INFO - Req was made 
+18.3.2023, 18:36:20 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:22 - INFO - Req was made 
+18.3.2023, 18:36:22 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:48 - INFO - Req was made 
+18.3.2023, 18:36:48 - DEBUG - sort |  
+18.3.2023, 18:36:49 - INFO - Req was made 
+18.3.2023, 18:36:49 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:51 - INFO - Req was made 
+18.3.2023, 18:36:51 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:53 - INFO - Req was made 
+18.3.2023, 18:36:53 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:54 - INFO - Req was made 
+18.3.2023, 18:36:54 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:36:59 - INFO - Req was made 
+18.3.2023, 18:36:59 - DEBUG - sort |  
+18.3.2023, 18:37:00 - INFO - Req was made 
+18.3.2023, 18:37:00 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:37:01 - INFO - Req was made 
+18.3.2023, 18:37:01 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:37:06 - INFO - Req was made 
+18.3.2023, 18:37:06 - DEBUG - sort |  
+18.3.2023, 18:37:10 - INFO - Req was made 
+18.3.2023, 18:37:10 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:37:12 - INFO - Req was made 
+18.3.2023, 18:37:12 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 18:40:50 - INFO - Req was made 
+18.3.2023, 18:40:50 - DEBUG - sort |  
+18.3.2023, 18:40:56 - DEBUG - toy | {"name":"111","price":19,"labels":["Doll","On wheels"],"createdAt":"3/18/2023, 6:40:54 PM","inStock":true} 
+18.3.2023, 18:41:06 - ERROR - cannot remove toy undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 18:41:06 - ERROR - Failed to remove toy | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 18:41:17 - INFO - Req was made 
+18.3.2023, 18:41:17 - DEBUG - sort |  
+18.3.2023, 18:41:28 - DEBUG - toy | {"name":"111","price":57,"labels":["Baby","Puzzle"],"createdAt":"3/18/2023, 6:41:26 PM","inStock":true} 
+18.3.2023, 18:41:28 - DEBUG - toy | {"name":"111","price":57,"labels":["Baby","Puzzle"],"createdAt":"3/18/2023, 6:41:26 PM","inStock":true} 
+18.3.2023, 18:42:53 - DEBUG - sort |  
+18.3.2023, 18:42:53 - INFO - Req was made 
+18.3.2023, 18:43:03 - DEBUG - toy | {"name":"111","price":94,"labels":["Art","Doll"],"createdAt":"3/18/2023, 6:43:02 PM","inStock":true} 
+18.3.2023, 18:43:03 - DEBUG - toy | {"name":"111","price":94,"labels":["Art","Doll"],"createdAt":"3/18/2023, 6:43:02 PM","inStock":true} 
+18.3.2023, 18:43:13 - INFO - Req was made 
+18.3.2023, 18:43:13 - DEBUG - sort |  
+18.3.2023, 18:43:20 - INFO - Req was made 
+18.3.2023, 18:43:20 - DEBUG - sort |  
+18.3.2023, 18:43:23 - DEBUG - toy | {"name":"asd","price":96,"labels":["Puzzle","Puzzle"],"createdAt":"3/18/2023, 6:43:21 PM","inStock":true} 
+18.3.2023, 18:43:23 - DEBUG - toy | {"name":"asd","price":96,"labels":["Puzzle","Puzzle"],"createdAt":"3/18/2023, 6:43:21 PM","inStock":true} 
+18.3.2023, 18:43:25 - INFO - Req was made 
+18.3.2023, 18:43:25 - DEBUG - sort |  
+18.3.2023, 18:43:33 - INFO - Req was made 
+18.3.2023, 18:43:33 - DEBUG - sort |  
+18.3.2023, 18:43:39 - DEBUG - toy | {"name":"asd","price":92,"labels":["Outdoor","Doll"],"createdAt":"3/18/2023, 6:43:37 PM","inStock":true} 
+18.3.2023, 18:43:39 - DEBUG - toy | {"name":"asd","price":92,"labels":["Outdoor","Doll"],"createdAt":"3/18/2023, 6:43:37 PM","inStock":true} 
+18.3.2023, 18:44:51 - DEBUG - sort |  
+18.3.2023, 18:44:51 - INFO - Req was made 
+18.3.2023, 18:45:37 - INFO - Req was made 
+18.3.2023, 18:45:37 - DEBUG - sort |  
+18.3.2023, 18:48:18 - INFO - Hi | 90 | Bobo 
+18.3.2023, 18:48:21 - DEBUG - toy | {"name":"123","price":32,"labels":["Outdoor","Baby"],"createdAt":"3/18/2023, 6:48:19 PM","inStock":true} 
+18.3.2023, 18:48:21 - DEBUG - new toy 
+18.3.2023, 18:48:21 - DEBUG - toy | {"name":"123","price":32,"labels":["Outdoor","Baby"],"createdAt":"3/18/2023, 6:48:19 PM","inStock":true} 
+18.3.2023, 18:48:21 - DEBUG - new toy 
+18.3.2023, 19:10:21 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:11:30 - INFO - Req was made 
+18.3.2023, 19:11:30 - DEBUG - sort |  
+18.3.2023, 19:11:42 - DEBUG - toy | {"name":"asd","price":97,"labels":["Doll","Outdoor"],"createdAt":"3/18/2023, 7:11:40 PM","inStock":true} 
+18.3.2023, 19:11:42 - DEBUG - new toy 
+18.3.2023, 19:11:42 - DEBUG - new toy 
+18.3.2023, 19:11:42 - DEBUG - toy | {"name":"asd","price":97,"labels":["Doll","Outdoor"],"createdAt":"3/18/2023, 7:11:40 PM","inStock":true} 
+18.3.2023, 19:11:49 - INFO - Req was made 
+18.3.2023, 19:11:49 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 19:11:50 - INFO - Req was made 
+18.3.2023, 19:11:50 - DEBUG - sort | {"by":"","desc":"1"} 
+18.3.2023, 19:12:43 - INFO - Req was made 
+18.3.2023, 19:12:43 - DEBUG - sort |  
+18.3.2023, 19:12:44 - INFO - Req was made 
+18.3.2023, 19:12:44 - DEBUG - sort |  
+18.3.2023, 19:12:46 - INFO - Req was made 
+18.3.2023, 19:12:46 - DEBUG - sort |  
+18.3.2023, 19:12:53 - INFO - Req was made 
+18.3.2023, 19:12:53 - DEBUG - sort |  
+18.3.2023, 19:13:12 - INFO - Req was made 
+18.3.2023, 19:13:12 - DEBUG - sort |  
+18.3.2023, 19:13:13 - INFO - Req was made 
+18.3.2023, 19:13:13 - DEBUG - sort | price 
+18.3.2023, 19:13:16 - INFO - Req was made 
+18.3.2023, 19:13:16 - DEBUG - sort | name 
+18.3.2023, 19:13:17 - INFO - Req was made 
+18.3.2023, 19:13:17 - DEBUG - sort |  
+18.3.2023, 19:13:34 - INFO - Req was made 
+18.3.2023, 19:13:34 - DEBUG - sort |  
+18.3.2023, 19:14:23 - INFO - Req was made 
+18.3.2023, 19:14:23 - DEBUG - sort |  
+18.3.2023, 19:14:33 - INFO - Req was made 
+18.3.2023, 19:14:33 - DEBUG - sort |  
+18.3.2023, 19:14:41 - INFO - Req was made 
+18.3.2023, 19:14:41 - DEBUG - sort |  
+18.3.2023, 19:14:55 - INFO - Req was made 
+18.3.2023, 19:14:55 - DEBUG - sort |  
+18.3.2023, 19:14:56 - INFO - Req was made 
+18.3.2023, 19:14:56 - DEBUG - sort |  
+18.3.2023, 19:15:13 - INFO - Req was made 
+18.3.2023, 19:15:13 - DEBUG - sort |  
+18.3.2023, 19:15:14 - INFO - Req was made 
+18.3.2023, 19:15:14 - DEBUG - sort |  
+18.3.2023, 19:17:25 - INFO - Req was made 
+18.3.2023, 19:17:25 - DEBUG - sort |  
+18.3.2023, 19:17:41 - INFO - Req was made 
+18.3.2023, 19:17:41 - DEBUG - sort |  
+18.3.2023, 19:18:04 - INFO - Req was made 
+18.3.2023, 19:18:04 - DEBUG - sort |  
+18.3.2023, 19:18:24 - INFO - Req was made 
+18.3.2023, 19:18:24 - DEBUG - sort |  
+18.3.2023, 19:18:35 - INFO - Req was made 
+18.3.2023, 19:18:35 - DEBUG - sort |  
+18.3.2023, 19:18:40 - INFO - Req was made 
+18.3.2023, 19:18:40 - DEBUG - sort |  
+18.3.2023, 19:19:00 - INFO - Req was made 
+18.3.2023, 19:19:00 - DEBUG - sort |  
+18.3.2023, 19:19:19 - INFO - Req was made 
+18.3.2023, 19:19:19 - DEBUG - sort |  
+18.3.2023, 19:20:08 - INFO - Req was made 
+18.3.2023, 19:20:08 - DEBUG - sort |  
+18.3.2023, 19:24:02 - INFO - Req was made 
+18.3.2023, 19:24:02 - DEBUG - sort |  
+18.3.2023, 19:24:25 - INFO - Req was made 
+18.3.2023, 19:24:25 - DEBUG - sort |  
+18.3.2023, 19:25:00 - INFO - Req was made 
+18.3.2023, 19:25:00 - DEBUG - sort |  
+18.3.2023, 19:25:36 - INFO - Req was made 
+18.3.2023, 19:25:36 - DEBUG - sort |  
+18.3.2023, 19:25:41 - INFO - Req was made 
+18.3.2023, 19:25:41 - DEBUG - sort |  
+18.3.2023, 19:25:44 - INFO - Req was made 
+18.3.2023, 19:25:44 - DEBUG - sort |  
+18.3.2023, 19:25:45 - INFO - Req was made 
+18.3.2023, 19:25:45 - DEBUG - sort |  
+18.3.2023, 19:25:54 - INFO - Req was made 
+18.3.2023, 19:25:54 - DEBUG - sort |  
+18.3.2023, 19:26:29 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:26:40 - INFO - Req was made 
+18.3.2023, 19:26:40 - DEBUG - sort 
+18.3.2023, 19:26:48 - INFO - Req was made 
+18.3.2023, 19:26:48 - DEBUG - sort 
+18.3.2023, 19:27:08 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:27:10 - INFO - Req was made 
+18.3.2023, 19:27:10 - DEBUG - sort 
+18.3.2023, 19:27:22 - INFO - Req was made 
+18.3.2023, 19:27:22 - DEBUG - sort 
+18.3.2023, 19:27:27 - INFO - Req was made 
+18.3.2023, 19:27:27 - DEBUG - sort 
+18.3.2023, 19:27:32 - INFO - Req was made 
+18.3.2023, 19:27:32 - DEBUG - sort 
+18.3.2023, 19:27:42 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:27:44 - INFO - Req was made 
+18.3.2023, 19:27:44 - DEBUG - sort 
+18.3.2023, 19:27:51 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:27:52 - INFO - Req was made 
+18.3.2023, 19:27:52 - DEBUG - sort 
+18.3.2023, 19:29:04 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:29:09 - INFO - Req was made 
+18.3.2023, 19:29:09 - DEBUG - sortBy | {"all":1} 
+18.3.2023, 19:29:09 - DEBUG - sort 
+18.3.2023, 19:29:12 - INFO - Req was made 
+18.3.2023, 19:29:12 - DEBUG - sortBy | price 
+18.3.2023, 19:29:12 - DEBUG - sort 
+18.3.2023, 19:29:26 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:29:30 - INFO - Req was made 
+18.3.2023, 19:29:30 - DEBUG - sortBy | {"all":1} 
+18.3.2023, 19:29:30 - DEBUG - sortCriteria |  
+18.3.2023, 19:29:30 - DEBUG - sort 
+18.3.2023, 19:29:34 - INFO - Req was made 
+18.3.2023, 19:29:34 - DEBUG - sortBy | price 
+18.3.2023, 19:29:34 - DEBUG - sortCriteria |  
+18.3.2023, 19:29:34 - DEBUG - sort 
+18.3.2023, 19:30:11 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:30:13 - INFO - Req was made 
+18.3.2023, 19:30:13 - DEBUG - sortBy | {"all":1} 
+18.3.2023, 19:30:13 - DEBUG - sortCriteria |  
+18.3.2023, 19:30:13 - DEBUG - sort 
+18.3.2023, 19:30:30 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:30:31 - INFO - Req was made 
+18.3.2023, 19:30:31 - DEBUG - sortBy | {"all":1} 
+18.3.2023, 19:30:31 - DEBUG - sortCriteria | name 
+18.3.2023, 19:30:31 - DEBUG - sort 
+18.3.2023, 19:31:53 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:32:08 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:32:11 - INFO - Req was made 
+18.3.2023, 19:32:11 - DEBUG - {"all":1} 
+18.3.2023, 19:32:18 - INFO - Req was made 
+18.3.2023, 19:32:18 - DEBUG - price 
+18.3.2023, 19:32:48 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:32:50 - INFO - Req was made 
+18.3.2023, 19:32:50 - DEBUG - [object Object] 
+18.3.2023, 19:32:57 - INFO - Req was made 
+18.3.2023, 19:32:57 - DEBUG - price 
+18.3.2023, 19:33:01 - INFO - Req was made 
+18.3.2023, 19:33:01 - DEBUG - name 
+18.3.2023, 19:33:41 - INFO - Req was made 
+18.3.2023, 19:33:41 - DEBUG - [object Object] 
+18.3.2023, 19:33:58 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:34:00 - INFO - Req was made 
+18.3.2023, 19:34:00 - DEBUG - all 
+18.3.2023, 19:34:02 - INFO - Req was made 
+18.3.2023, 19:34:02 - DEBUG - price 
+18.3.2023, 19:34:05 - INFO - Req was made 
+18.3.2023, 19:34:05 - DEBUG - name 
+18.3.2023, 19:34:42 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:34:43 - INFO - Req was made 
+18.3.2023, 19:34:43 - DEBUG - all 
+18.3.2023, 19:34:45 - INFO - Req was made 
+18.3.2023, 19:34:45 - DEBUG - price 
+18.3.2023, 19:34:58 - INFO - Req was made 
+18.3.2023, 19:34:58 - DEBUG - name 
+18.3.2023, 19:35:00 - INFO - Req was made 
+18.3.2023, 19:35:00 - DEBUG - all 
+18.3.2023, 19:36:42 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:36:45 - INFO - Req was made 
+18.3.2023, 19:36:45 - DEBUG - ["price"] 
+18.3.2023, 19:36:56 - INFO - Req was made 
+18.3.2023, 19:36:56 - DEBUG - ["all"] 
+18.3.2023, 19:36:58 - INFO - Req was made 
+18.3.2023, 19:36:58 - DEBUG - ["createdAt"] 
+18.3.2023, 19:37:01 - INFO - Req was made 
+18.3.2023, 19:37:01 - DEBUG - ["all"] 
+18.3.2023, 19:38:08 - INFO - Hi | 90 | Bobo 
+18.3.2023, 19:38:21 - INFO - Req was made 
+18.3.2023, 19:40:59 - DEBUG - toy | {"name":"asd","price":35,"labels":["Baby","Box game"],"createdAt":"3/18/2023, 7:40:58 PM","inStock":true} 
+18.3.2023, 19:40:59 - DEBUG - new toy 
+18.3.2023, 19:40:59 - DEBUG - toy | {"name":"asd","price":35,"labels":["Baby","Box game"],"createdAt":"3/18/2023, 7:40:58 PM","inStock":true} 
+18.3.2023, 19:40:59 - DEBUG - new toy 
+18.3.2023, 19:43:16 - INFO - Req was made 
+18.3.2023, 19:47:36 - INFO - Req was made 
+18.3.2023, 19:49:52 - INFO - Req was made 

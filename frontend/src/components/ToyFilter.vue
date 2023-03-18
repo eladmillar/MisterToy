@@ -32,7 +32,7 @@
       </section>
       <section>
         <label for="sort">Sort By:</label>
-        <select name="sort" id="sort" @input="setFilter" v-model="filterBy.sortBy.by">
+        <select name="sort" id="sort" @input="setFilter" v-model="filterBy.sortBy">
           <option value>All</option>
           <option value="price">price</option>
           <option value="name">Name</option>
@@ -51,10 +51,7 @@ export default {
         name: "",
         inStock: null,
         labels: [],
-        sortBy: {
-          by: '',
-          desc: 1
-        }
+        sortBy: ""
       }
     };
   },

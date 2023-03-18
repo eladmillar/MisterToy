@@ -1,0 +1,10 @@
+.toy-list {
+  width: 80%;
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+}

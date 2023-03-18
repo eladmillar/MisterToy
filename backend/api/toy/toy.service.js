@@ -15,19 +15,12 @@ function _buildCriteria(filterBy) {
     return criteria
 }
 
-function _buildSortCriteria(sortBy) {
-    logger.debug('sortBy', sortBy)
-    const obj = { _id: 1 }
-    if (sortBy === 'all') return obj
-}
-
 async function query(filterBy = { name: '' }) {
-    // const sortCriteria = _buildSortCriteria(filterBy.sortBy)
-    // logger.debug('sortCriteria', sortCriteria)
+    const sort = `${filterBy.sortBy}`
     const criteria = _buildCriteria(filterBy)
     try {
         const collection = await dbService.getCollection('toy')
-        var toys = await collection.find(criteria).sort().toArray()
+        var toys = await collection.find(criteria).sort({ [sort]: 1 }).toArray()
         return toys
     } catch (err) {
         logger.error('cannot find toys', err)
@@ -58,6 +51,7 @@ async function remove(toyId) {
 
 async function add(toy) {
     try {
+        logger.debug('new toy')
         const collection = await dbService.getCollection('toy')
         await collection.insertOne(toy)
         return toy

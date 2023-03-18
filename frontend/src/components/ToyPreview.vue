@@ -24,15 +24,13 @@ export default {
   name: "ToyPreview",
   props: ["toy"],
   methods: {
-    removeToy() {
-      this.$store
-        .dispatch({ type: "removeToy", toyId: this.toy._id })
-        .then(() => {
-          showSuccessMsg("Toy removed");
-        })
-        .catch(err => {
-          showErrorMsg("Cannot remove toy");
-        });
+    async removeToy() {
+      try {
+        await this.$store.dispatch({ type: "removeToy", toyId: this.toy._id });
+        showSuccessMsg("Toy removed");
+      } catch (err) {
+        showErrorMsg("Cannot remove toy");
+      }
     }
   }
 };

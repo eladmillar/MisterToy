@@ -1,15 +1,24 @@
 import { toyService } from '../services/toy.service'
 
-export const toyStore = {
+export const toyStore = ({
     state: {
-        toys: toyService.query(),
-        msg: 'Store Is Running'
+        toys: null,
+        labels:
+            ['On wheels',
+                'Box game',
+                'Art',
+                'Baby',
+                'Doll',
+                'Puzzle',
+                'Outdoor',],
+        filterBy: null,
     },
     mutations: {
         setToys(state, { toys }) {
             state.toys = toys
         },
         setFilterBy(state, { filterBy }) {
+            console.log('test1')
             state.filterBy = filterBy
         },
         addToy({ toys }, { toy }) {
@@ -25,57 +34,63 @@ export const toyStore = {
         },
     },
     actions: {
-        loadToys({ commit }, { filterBy }) {
-            toyService
-                .query(filterBy)
-                .then(toys => {
-                    commit({ type: 'setToys', toys })
-                })
-                .catch(err => {
-                    throw err
-                })
+        async loadToys({ commit }, { filterBy }) {
+            try {
+                const toys = await toyService.query(filterBy)
+                commit({ type: 'setToys', toys })
+            } catch (err) {
+                throw err
+            }
         },
-        setFilter({ commit }, { filterBy }) {
-            commit({ type: 'setFilterBy', filterBy })
-            toyService.query(filterBy)
-                .then(toys => {
-                    commit({ type: 'setToys', toys })
-                })
-                .catch((err) => {
-                    console.error('Cannot set filter', err)
-                    throw err
-                })
+        async setFilter({ commit }, { filterBy }) {
+            try {
+                // commit({ type: 'setFilterBy', filterBy })
+                const toys = await toyService.query(filterBy)
+                commit({ type: 'setToys', toys })
+            } catch (err) {
+                console.error('Cannot set filter', err)
+                throw err
+            }
         },
-        saveToy({ commit }, { toy }) {
+        async saveToy({ commit }, { toy }) {
             const type = (toy._id) ? 'updateToy' : 'addToy'
-            return toyService.save(toy)
-                .then(savedToy => {
-                    commit({ type, toy: savedToy })
-                })
-                .catch((err) => {
-                    console.error('Cannot save toy', err)
-                    throw err
-                })
+            try {
+                const savedToy = await toyService.save(toy)
+                commit({ type, toy: savedToy })
+            } catch (err) {
+                console.error('Cannot save toy', err)
+                throw err
+            }
         },
-        removeToy({ commit }, { toyId }) {
-            return toyService.remove(toyId)
-                .then(() => {
-                    commit({ type: 'removeToy', toyId })
-                })
-                .catch((err) => {
-                    console.error('Cannot remove toy', err)
-                    throw err
-                })
+        async removeToy({ commit }, { toyId }) {
+            try {
+                await toyService.remove(toyId)
+                commit({ type: 'removeToy', toyId })
+            } catch (err) {
+                console.error('Cannot remove toy', err)
+                throw err
+            }
         },
     },
     getters: {
-        getMsg(state) {
-            return state.msg
+        labels(state) {
+            return state.labels
         },
         toysToDisplay({ toys }) {
             if (!toys) return null
             return toys
         },
+        pricesPerLabel({ toys }) {
+            let res = {}
+            toys.forEach(toy => {
+                res = toy.labels.reduce((obj, label) => {
+                    if (!obj[label]) obj[label] = 0
+                    obj[label] += toy.price
+                    return obj
+                }, res)
+            })
+            return res
+        },
     },
     modules: {}
-}
+})

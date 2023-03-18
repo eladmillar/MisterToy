@@ -21,11 +21,10 @@ export default {
       toy: null
     };
   },
-  created() {
+  async created() {
     const { toyId } = this.$route.params;
-    toyService.getById(toyId).then(toy => {
-      this.toy = toy;
-    });
+    const toy = await toyService.getById(toyId);
+    this.toy = toy;
   }
 };
 </script>
