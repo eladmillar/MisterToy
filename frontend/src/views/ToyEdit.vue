@@ -1,6 +1,6 @@
 <template>
-  <section v-if="toy" @submit.prevent="saveToy" class="toy-edit">
-    <form>
+  <section v-if="toy" class="toy-edit">
+    <form @submit.prevent="saveToy">
       <section>
         <label for="name">Name:</label>
         <input v-model="toy.name" />
@@ -8,6 +8,11 @@
       <section>
         <label for="price">Price:</label>
         <input v-model="toy.price" />
+      </section>
+      <section class="form-control">
+        <el-select v-model="toy.labels" multiple placeholder="None">
+          <el-option v-for="label in labels" :key="label" :label="label" :value="label" />
+        </el-select>
       </section>
       <button @click="saveToy">Save</button>
     </form>
@@ -18,7 +23,6 @@
 
 <script>
 import { toyService } from "../services/toy.service.js";
-import ToyPreview from "../components/ToyPreview.vue";
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js";
 
 export default {
@@ -44,14 +48,15 @@ export default {
       } catch {
         showErrorMsg("Cannot save toy");
       }
-    },
-    computed: {
-      labels() {
-        return this.$store.getters.labels;
-      }
-    },
-    components: {
-      ToyPreview
+    }
+  },
+  computed: {
+    labels() {
+      console.log(
+        "this.$store.getters.labels",
+        JSON.parse(JSON.stringify(this.$store.getters.labels))
+      );
+      return JSON.parse(JSON.stringify(this.$store.getters.labels));
     }
   }
 };

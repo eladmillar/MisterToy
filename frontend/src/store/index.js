@@ -1,7 +1,7 @@
 import { createStore } from 'vuex';
 
 import { toyStore } from './toy.store.js'
-// import { userStore } from './user.store.js'
+import { userStore } from './user.store.js'
 
 const store = createStore({
     strict: true,
@@ -15,7 +15,7 @@ const store = createStore({
     actions: {},
     modules: {
         toyStore,
-        // userStore
+        userStore
     }
 })
 export default store;

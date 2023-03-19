@@ -5,6 +5,7 @@ import ToyIndex from './../views/ToyIndex.vue'
 import ToyEdit from '../views/ToyEdit.vue'
 import ToyDetails from '../views/ToyDetails.vue'
 import Dashboard from '../views/Dashboard.vue'
+import Login from '../views/LoginSignup.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,11 @@ const router = createRouter({
       path: '/dashboard',
       name: 'dashboard',
       component: Dashboard
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
     },
     {
       path: '/toy',

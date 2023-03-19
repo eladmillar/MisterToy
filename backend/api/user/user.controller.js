@@ -18,6 +18,7 @@ async function getUsers(req, res) {
             minBalance: +req.query?.minBalance || 0
         }
         const users = await userService.query(filterBy)
+        logger.debug('users')
         res.send(users)
     } catch (err) {
         logger.error('Failed to get users', err)
